@@ -1,0 +1,9 @@
+ai:
+  provider: ""            # "openai" | "grok" | "" to disable
+  timeout_seconds: 30
+  openai:
+    model: gpt-4o-mini
+    endpoint: https://api.openai.com/v1/chat/completions
+  grok:
+    model: grok-2
+    endpoint: https://api.x.ai/v1/chat/completions
