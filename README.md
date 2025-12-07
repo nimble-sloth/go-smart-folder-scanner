@@ -8,8 +8,17 @@ go run ./cmd/gui
 ```
 
 ## Build
+Option 1
 ```bash
-go build -o bin/folder-scanner ./cmd/gui
+cd C:\Repo\go-smart-folder-scanner
+go build -o bin/folder-scanner.exe ./cmd/gui
+```
+
+Option 2 - fancy icon
+```bash
+cd C:\Repo\go-smart-folder-scanner
+rsrc -ico assets\icon.ico -o cmd\gui\rsrc.syso
+go build -ldflags="-H=windowsgui" -o bin\folder-scanner.exe .\cmd\gui
 ```
 
 ## Notes
